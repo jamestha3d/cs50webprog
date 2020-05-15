@@ -1,0 +1,74 @@
+$color: #871f78;
+
+.bg-custom{
+    		background-color: $color;
+    	}
+
+.board{
+		color: white;
+    	text-align: center;
+    	margin-top: 50px
+    	}
+
+.rule{
+
+}
+
+@media (min-width: 500px){
+	#welcome::before{
+		content: "Welcome to Chess Hub!" ;
+
+	}
+}
+@media (max-width: 499px){
+	#welcome::before{
+		content: "Welcome!";
+	}
+}
+
+.grid{
+	background-color: green;
+	display:grid;
+	padding:20px;
+	grid-column-gap: 20px;
+	grid-row-gap:10px;
+	grid-template-columns: 200px 200px auto;
+}
+
+.grid-item{
+	background-color: white;
+	font-size: 20px;
+}
+
+/*col-lg-3 col-sm-6*/
+
+div{
+	h2{
+    	margin-bottom: 50px;
+        border-style: solid;
+        border-color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+    	}
+
+ }
+
+ %end{
+ 	margin: 20px;
+ 	border-color: white;
+ 	border-style: solid;	
+ }
+
+ #win {
+ 	@extend %end;
+ 	background-color: green;
+ }
+ #draw {
+ 	@extend %end;
+ 	background-color: yellow;
+ }
+ #stale{
+ 	@extend %end:
+ 	background-color: orange;
+ }
+ 
