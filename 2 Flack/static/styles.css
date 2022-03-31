@@ -1,0 +1,292 @@
+body {
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /*background-color: #00ACEE; light blue
+  #111 black; #003152 prussian_blue
+  /*background-color: #871f78; purple*/ 
+  background-color: #003152;
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sidenav a,h2 {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+#sidenavbtn{
+  display:flex;
+
+}
+
+#nochannel{
+  color: white;
+  padding-left: 20px;
+  
+}
+
+.maindiv {
+  height: 100%;
+  margin-left: 200px; /* Same as the width of the sidenav */
+  margin-right: 150px; /* Same as the width of the alertnav */
+  position: relative;
+
+}
+
+.maindiv h1{
+  text-align: center;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .alerts {padding-top: 15px;}
+}
+
+#welcome {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/*.content{
+  margin-left: 100px;
+  
+}*/
+
+.channels {
+  display:grid !important;
+}
+
+.clicked, .clicked:visited, .clicked:active, .clicked:hover{
+  border: none !important;
+}
+
+
+
+.alerts {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  /*background-color: #808080;*/
+  overflow-x: hidden;
+  padding-top: 20px;
+  display: none;
+}
+/* alerts*/
+#alerts a{
+  display:grid;
+  font-size: 15px;
+}
+
+#chatroom {
+  width: 70%;
+  height: 77%;
+  margin-left: 20px;
+  margin-right: 20px;
+  top: 80px;
+  position:fixed;
+  text-align: center;
+  overflow: scroll;
+  padding-right: 50px;
+  padding-left: 30px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  
+
+
+  
+
+   /*====*/
+  
+}
+
+#header_all{
+  float:right;
+  right:0;
+  margin-right: 50px;
+  display: flex;
+}
+#logout{
+  border-radius:40px !important;
+  height: 30px !important;
+  padding-top:0px ;
+
+}
+
+/* input field for new channel name*/
+#channelname{
+  background-color: #ffffff;
+  background-color: yellow;
+  max-width: 140px;
+}
+
+/* diplay name*/
+#text{
+  color:blue;
+}
+
+/* Chat box which holds input and send button*/
+#chatlist{
+  width: 81%;
+  position:fixed;
+  margin-left: 20px;
+  margin-right: 20px;
+  bottom: 20px;
+
+}
+
+
+
+
+
+
+.maindiv .form-control{
+  display: inline-block;
+  width: 80%;
+}
+/*=============================================*/
+
+
+.chatbody {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.chatmsg {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  /*padding: 10px;*/
+  margin: 10px 0px;
+  position: relative;
+  
+  width: 51%;
+  min-height: 0;
+  
+  
+  /*====*/
+
+  justify-content: flex-start;
+  text-align: left;
+  float: left;
+ 
+}
+
+.darker{
+  float: right !important;
+  right: 0;
+  margin-left: 100px;
+}
+
+#userid {
+  float: left;
+  left: 7px;
+  bottom: 0;
+  position: absolute;
+  color: #626f78;
+  font-size: 12px;
+  font-weight: bold;
+
+}
+
+.darker #userid{
+  float: right;
+}
+
+.darker {
+  border-color: #ccc;
+  /*background-color: #ddd;*/
+  /*background-color: #ADD8E6;*/
+  background-color: #93ccea;
+  /*background-color: #FDFFF5;*/ 
+
+}
+
+#msgbox{
+  margin-left: 50px;
+  padding: 10px;
+  font-size: 15px
+  /*text-align: left;
+  color: black;
+  top: 0;
+  ;
+  left: 60px;
+  
+  padding: 50px;*/
+  
+   
+}
+
+.chatmsg::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.chatmsg img {
+  float: left;
+  top: 0;
+  left: 0;
+  /*position:absolute;*/
+  max-width: 60px;
+  width: 100%;
+  /*margin-right: 20px;*/
+  border-radius: 50%;
+  min-width: 30px;
+
+}
+
+/*.darker img {
+  float: right;
+  top: 3px;
+  left: 3px;
+  position:absolute;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+
+
+
+  margin-left: 20px;
+  margin-right:0;
+} */
+
+.time {
+  float: right;
+  color: #aaa;
+  font-size: 12px;
+  right:4px;
+  bottom:0;
+  position:absolute;
+}
+
+.darker .time {
+  float: left;
+  color: #999;
+}
+
+
+

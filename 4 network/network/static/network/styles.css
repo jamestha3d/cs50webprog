@@ -1,0 +1,166 @@
+.body{
+    margin: 10px;
+    padding:  20px;
+}
+.prepost{
+    margin: 20px 50px 20px 50px auto;
+}
+
+.index{
+    
+}
+
+#dashboard{
+    border: thin;
+    border-style: outset;
+    border-color: lightgray;
+    border-radius: 5px;
+    padding: 0px 30px 0px 20px;
+    margin: 0 auto;
+}
+.postcontainer{
+
+    margin: 0 auto;
+    
+    border: thin;
+    
+    
+    border-radius: 5px;
+
+}
+.posts{
+    width: auto;
+    height: auto;
+    padding: 0px 30px 30px 20px;
+    margin: 15px auto;
+    border: thin;
+    border-style: outset;
+    border-radius: 5px;
+    /*background-color: #add8e6;*/
+    background-color: white;
+    border-color: #D3D3D3;
+    
+    
+}
+
+/* every posters name */
+.poster{
+    float: left;
+    width: 100%; 
+    height: 20%%;
+    margin: 10px 0px 10px 0px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    position:relative; 
+    
+}
+
+.date{
+    
+    float: right;
+    width: auto;
+    
+    font-size: 12px;
+    color: darkgrey;
+    
+}
+
+.like{
+    position: relative;
+    float: left;
+    color: red;
+}
+
+
+.postcontent{
+    padding-bottom: 5px;
+    font-size: 15px;
+    width: auto;
+    }
+
+.posthead{
+    height: 90%;
+    width: 100%;
+    position: relative;
+
+}
+.postbody{
+    height: 10%;
+    width: 100%;
+    font-size: 15px;
+    background-color: black;
+}
+
+.edit2{
+    position: relative;
+    float: left;
+}
+.edit{
+    
+    font-size: 13px;
+}
+
+.numlikes{
+    color: blue;
+}
+
+.followboard{
+    font-family: monospace;
+
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.editform{
+    display: none;
+}
+
+.postername{
+    color: black;
+}
+
+/* current user's username on posts */
+.me{
+    
+}
+
+/* current user's posts */
+.mypost{
+
+}
+
+.postlikesnum{
+    color: darkgrey;
+}
+
+.likebutton{
+    cursor: pointer;
+}
+
+.fa-heart{
+    font-size:15px;
+    
+}
+
+.editlink{
+    font-size: 0.5 ;
+    size: 5px;
+}
+
+.btm-sml{
+    font-size: 0.5em;
+    padding: 5px 5px;
+}
+
+.loginform{
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+textarea{
+    width: 90%;
+    min-width: 75px;
+    resize: none;
+}
